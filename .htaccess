@@ -1,0 +1,19 @@
+RewriteEngine On
+RewriteRule ^index   index.php?act=index&%{QUERY_STRING}
+RewriteRule ^login   index.php?act=login&%{QUERY_STRING}
+RewriteRule ^profile   index.php?act=getuser&%{QUERY_STRING}
+RewriteRule ^register   index.php?act=register&%{QUERY_STRING}
+RewriteRule ^search   index.php?act=search&page=search&%{QUERY_STRING}
+RewriteRule ^tweets index.php?act=gettweets&page=tweets&%{QUERY_STRING}
+RewriteRule ^tweetcreate index.php?act=tweetcreate&%{QUERY_STRING}
+RewriteRule ^followers index.php?act=getfollowers&page=followers&%{QUERY_STRING}
+RewriteRule ^follows index.php?act=getfollows&page=follows&%{QUERY_STRING}
+RewriteRule ^deletetweet index.php?act=deletetweet&%{QUERY_STRING}
+RewriteRule ^edittweet index.php?act=gettweet&page=edittweet&%{QUERY_STRING}
+RewriteRule ^tweetupdate index.php?act=tweetupdate&%{QUERY_STRING}
+RewriteRule ^guest index.php?act=getguest&page=guest&%{QUERY_STRING}
+RewriteRule ^edit index.php?act=getuser&page=edit&%{QUERY_STRING}
+RewriteRule ^update index.php?act=updateuser&%{QUERY_STRING}
+RewriteRule ^delete index.php?act=deleteuser&%{QUERY_STRING}
+RewriteRule ^follow index.php?act=followuser&%{QUERY_STRING}
+RewriteRule ^unfollow index.php?act=unfollowuser&%{QUERY_STRING}
